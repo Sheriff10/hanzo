@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="bg-black">
          <div className="flex container justify-between items-center pt-16 px-md-5 pb-4">
             <div className="logo-wrap">
-               <img src="/asset/logoText.png" alt="Hanzo" />
+               <img src="/asset/logotext.png" alt="Hanzo" />
             </div>
             <div className="icon-wrap flex justify-end gap-3">
                {iconArr.map((i, index) => (
