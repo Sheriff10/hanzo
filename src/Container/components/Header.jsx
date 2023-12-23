@@ -8,8 +8,7 @@ export default function Header() {
    const navigation = [
       { name: "Twitter", href: "#" },
       { name: "Telegram", href: "#" },
-      { name: "Solscan", href: "#" },
-      { name: "Etherscan", href: "#" },
+      { name: "coinhall", href: "#" },
    ];
    //    const navi = useNavigate();
 

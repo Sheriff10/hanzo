@@ -1,14 +1,13 @@
 import React from "react";
+import { FaTelegram, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
    const iconFunc = (icons, link) => {
       return { icons, link };
    };
    const iconArr = [
-      iconFunc("/asset/x.png", ""),
-      iconFunc("/asset/tg.svg", "#"),
-      iconFunc("/asset/ethscan.png", "#"),
-      iconFunc("/asset/solscan.png", "#"),
+      iconFunc(<FaTwitter /> , ""),
+      iconFunc(<FaTelegram />, "#"),
    ];
    return (
       <div className="bg-black">
@@ -18,8 +17,8 @@ export default function Footer() {
             </div>
             <div className="icon-wrap flex justify-end gap-3">
                {iconArr.map((i, index) => (
-                  <a href={i.link} target="_blank" key={index}>
-                     <img src={i.icons} alt="" width={20} />
+                  <a href={i.link} target="_blank" className="text-md text-white" key={index}>
+                     {i.icons}
                   </a>
                ))}
             </div>
