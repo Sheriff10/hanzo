@@ -28,13 +28,13 @@ export default function Wolf() {
             </div>
          </div>
 
-         <div className="container mx-auto py-8 text-center">
+         <div className="container mx-auto text-center py-16">
             <div className="col-md-6 mx-auto">
-               <div className="heading text-hanzu-yellow font-bold text-xl text-center">
+               <div className="heading text-hanzu-yellow font-bold text-2xl text-center">
                   <span>Embrace the Blade - $HANZO Token</span>
                </div>
 
-               <div className="text-wrap my-3">
+               <div className="text-wrap my-4">
                   <span className="text-sm text-white">
                      In the silent whispers of the blockchain, a new shuriken is
                      forged. Behold, HANZO, the token with the spirit of a
@@ -43,7 +43,7 @@ export default function Wolf() {
                   </span>
                </div>
 
-               <div className="text-wrap font-bold text-lg text-pri">
+               <div className="text-wrap font-bold text-xl text-pri">
                   <span>
                      Designed for those who move silently but trade fiercely in
                      the crypto world.

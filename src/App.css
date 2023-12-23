@@ -1,10 +1,23 @@
-
 @font-face {
-    font-family: "NINJA";
-    src: url("/public/font/Akisa.otf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
- }
+   font-family: "NINJA";
+   src: url("/public/font/Akisa.otf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "NINJA2";
+   src: url("/public/font/mid.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
+
+.intro {
+   background-size: cover;
+   background: url("/public/asset/wolf-bg.jpeg");
+}
+.intro .bg-wrap {
+   background: linear-gradient(to bottom, black, transparent, black);
+}
 
 .tk {
    background: url("/public/asset/bg-leave.png") no-repeat;
@@ -21,16 +34,26 @@ body {
    .text-cente {
       text-align: center;
    }
+   .intro {
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
 }
 
 .text-ninja {
-    font-family: "NINJA", sans-serif;
+   font-family: "NINJA";
+}
+.text-ninja2 {
+   font-family: "NINJA2";
 }
 
 .wolf-bg {
-    background: url('/public/asset/plusBg.png') no-repeat;
-    background-size: cover;
+   background: url("/public/asset/plusBg.png") no-repeat;
+   background-size: cover;
 }
 .wolf-bg-grad {
    background: linear-gradient(to bottom, black, transparent);
+}
+.test {
+   mix-blend-mode: difference;
 }
