@@ -6,8 +6,8 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 export default function Header() {
    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
    const navigation = [
-      { name: "Twitter", href: "#" },
-      { name: "Telegram", href: "#" },
+      { name: "Twitter", href: "https://twitter.com/HanzoINJ" },
+      { name: "Telegram", href: "https://t.me/HanzoInj" },
       { name: "coinhall", href: "#" },
    ];
    //    const navi = useNavigate();
@@ -43,6 +43,7 @@ export default function Header() {
                   <a
                      key={item.name}
                      href={item.href}
+                     target="_blank"
                      className="text-sm  leading-6 text-neutral-200"
                   >
                      {item.name}

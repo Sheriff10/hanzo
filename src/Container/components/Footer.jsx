@@ -6,8 +6,8 @@ export default function Footer() {
       return { icons, link };
    };
    const iconArr = [
-      iconFunc(<FaTwitter /> , ""),
-      iconFunc(<FaTelegram />, "#"),
+      iconFunc(<FaTwitter /> , "https://twitter.com/HanzoINJ"),
+      iconFunc(<FaTelegram />, "https://t.me/HanzoInj"),
    ];
    return (
       <div className="bg-black">
