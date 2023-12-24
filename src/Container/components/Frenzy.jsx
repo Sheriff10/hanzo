@@ -1,11 +1,23 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 
 export default function Frenzy() {
+   const [ref1, inView1] = useInView({ threshold: 0.3 });
+
    return (
-      <div className="bg-black relative overflow-hidden">
+      <div
+         ref={ref1}
+         className={`bg-black relative overflow-hidden  ${
+            inView1 ? "fade-in" : "fade-out"
+         }`}
+      >
          <div className="grid md:grid-cols-2 mt-10">
             <div className="img-wrap">
-               <img src="/asset/cloud.png" alt="Hanzo" className="hidden md:block md:absolute w-[300px] bottom-0" />
+               <img
+                  src="/asset/cloud.png"
+                  alt="Hanzo"
+                  className="hidden md:block md:absolute w-[300px] bottom-0"
+               />
                <img
                   src="/asset/halfWolf.png"
                   alt="Hanzo"
